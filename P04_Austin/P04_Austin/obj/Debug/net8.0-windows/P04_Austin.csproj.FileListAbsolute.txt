@@ -31,3 +31,4 @@ C:\Users\Austin\Desktop\Visual Programming\P04_Austin\P04_Austin\obj\Debug\net8.
 C:\Users\Austin\Desktop\Visual Programming\P04_Austin\P04_Austin\obj\Debug\net8.0-windows\P04_Austin.pdb
 C:\Users\Austin\Desktop\Visual Programming\P04_Austin\P04_Austin\obj\Debug\net8.0-windows\P04_Austin.genruntimeconfig.cache
 C:\Users\Austin\Desktop\Visual Programming\P04_Austin\P04_Austin\obj\Debug\net8.0-windows\ref\P04_Austin.dll
+C:\Users\tmicr\Desktop\Visual Programming\P04_Austin\P04_Austin\obj\Debug\net8.0-windows\P04_Austin.sourcelink.json

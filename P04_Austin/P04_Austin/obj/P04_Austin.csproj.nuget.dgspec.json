@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Austin\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj": {}
+    "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Austin\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj": {
+    "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Austin\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj",
+        "projectUniqueName": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj",
         "projectName": "P04_Austin",
-        "projectPath": "C:\\Users\\Austin\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj",
-        "packagesPath": "C:\\Users\\Austin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Austin\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\obj\\",
+        "projectPath": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\P04_Austin.csproj",
+        "packagesPath": "C:\\Users\\tmicr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P04_Austin\\P04_Austin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Austin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tmicr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

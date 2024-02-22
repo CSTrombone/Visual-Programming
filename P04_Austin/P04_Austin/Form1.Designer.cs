@@ -80,7 +80,6 @@
             // 
             team1LstBox.FormattingEnabled = true;
             team1LstBox.ItemHeight = 15;
-            team1LstBox.Items.AddRange(new object[] { "Balls", "Cum Monster", "Ricky", "Steve" });
             team1LstBox.Location = new Point(69, 281);
             team1LstBox.Name = "team1LstBox";
             team1LstBox.Size = new Size(120, 109);
@@ -91,7 +90,6 @@
             // 
             team2LstBox.FormattingEnabled = true;
             team2LstBox.ItemHeight = 15;
-            team2LstBox.Items.AddRange(new object[] { "Beathoven", "Goku", "Lord your God", "Mr. Terrific" });
             team2LstBox.Location = new Point(249, 281);
             team2LstBox.Name = "team2LstBox";
             team2LstBox.Size = new Size(120, 109);
