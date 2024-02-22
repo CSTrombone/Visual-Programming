@@ -42,12 +42,22 @@ namespace P04_Austin
 
         private void team1AddBtn_Click(object sender, EventArgs e)
         {
-
+            if (playersList.SelectedIndex != -1)
+            {
+                team1LstBox.Items.Add(playersList.Text);
+                playersList.Items.Remove(playersList.Text);
+                playersList.Text = "";
+            }
         }
 
         private void team2AddBtn_Click(object sender, EventArgs e)
         {
-
+            if (playersList.SelectedIndex != -1)
+            {
+                team2LstBox.Items.Add(playersList.Text);
+                playersList.Items.Remove(playersList.Text);
+                playersList.Text = "";
+            }
         }
 
         private void team1RemoveBtn_Click(object sender, EventArgs e)

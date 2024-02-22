@@ -46,7 +46,7 @@
             // playersLbl
             // 
             playersLbl.AutoSize = true;
-            playersLbl.Location = new Point(192, 41);
+            playersLbl.Location = new Point(198, 25);
             playersLbl.Margin = new Padding(2, 0, 2, 0);
             playersLbl.Name = "playersLbl";
             playersLbl.Size = new Size(44, 15);
@@ -57,7 +57,7 @@
             // 
             playersList.DropDownStyle = ComboBoxStyle.Simple;
             playersList.FormattingEnabled = true;
-            playersList.Location = new Point(119, 63);
+            playersList.Location = new Point(119, 42);
             playersList.Margin = new Padding(2);
             playersList.Name = "playersList";
             playersList.Size = new Size(203, 156);
@@ -67,7 +67,7 @@
             // 
             // restartBtn
             // 
-            restartBtn.Location = new Point(181, 229);
+            restartBtn.Location = new Point(180, 202);
             restartBtn.Margin = new Padding(2);
             restartBtn.Name = "restartBtn";
             restartBtn.Size = new Size(76, 20);
@@ -80,9 +80,9 @@
             // 
             team1LstBox.FormattingEnabled = true;
             team1LstBox.ItemHeight = 15;
-            team1LstBox.Location = new Point(69, 281);
+            team1LstBox.Location = new Point(70, 254);
             team1LstBox.Name = "team1LstBox";
-            team1LstBox.Size = new Size(120, 109);
+            team1LstBox.Size = new Size(120, 124);
             team1LstBox.Sorted = true;
             team1LstBox.TabIndex = 3;
             // 
@@ -90,16 +90,16 @@
             // 
             team2LstBox.FormattingEnabled = true;
             team2LstBox.ItemHeight = 15;
-            team2LstBox.Location = new Point(249, 281);
+            team2LstBox.Location = new Point(250, 254);
             team2LstBox.Name = "team2LstBox";
-            team2LstBox.Size = new Size(120, 109);
+            team2LstBox.Size = new Size(120, 124);
             team2LstBox.Sorted = true;
             team2LstBox.TabIndex = 4;
             // 
             // firstLbl
             // 
             firstLbl.AutoSize = true;
-            firstLbl.Location = new Point(101, 263);
+            firstLbl.Location = new Point(101, 236);
             firstLbl.Name = "firstLbl";
             firstLbl.Size = new Size(60, 15);
             firstLbl.TabIndex = 5;
@@ -108,7 +108,7 @@
             // secondLbl
             // 
             secondLbl.AutoSize = true;
-            secondLbl.Location = new Point(268, 263);
+            secondLbl.Location = new Point(270, 236);
             secondLbl.Name = "secondLbl";
             secondLbl.Size = new Size(77, 15);
             secondLbl.TabIndex = 6;
