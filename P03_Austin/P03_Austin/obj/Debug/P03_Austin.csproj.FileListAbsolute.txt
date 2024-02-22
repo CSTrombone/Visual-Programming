@@ -1,0 +1,10 @@
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\bin\Debug\P03_Austin.exe.config
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\bin\Debug\P03_Austin.exe
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\bin\Debug\P03_Austin.pdb
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\obj\Debug\P03_Austin.csproj.AssemblyReference.cache
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\obj\Debug\P03_Austin.Properties.Resources.resources
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\obj\Debug\P03_Austin.csproj.GenerateResource.cache
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\obj\Debug\P03_Austin.csproj.CoreCompileInputs.cache
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\obj\Debug\P03_Austin.exe
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\obj\Debug\P03_Austin.pdb
+C:\Users\Austin\Desktop\Visual Programming\P03_Austin\P03_Austin\obj\Debug\P03_Austin.program3.resources

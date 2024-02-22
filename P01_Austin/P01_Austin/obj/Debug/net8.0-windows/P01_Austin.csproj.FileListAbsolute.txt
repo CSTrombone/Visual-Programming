@@ -1,0 +1,17 @@
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\bin\Debug\net8.0-windows\P01_Austin.exe
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\bin\Debug\net8.0-windows\P01_Austin.deps.json
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\bin\Debug\net8.0-windows\P01_Austin.runtimeconfig.json
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\bin\Debug\net8.0-windows\P01_Austin.dll
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\bin\Debug\net8.0-windows\P01_Austin.pdb
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.Window.resources
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.Properties.Resources.resources
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.csproj.GenerateResource.cache
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.AssemblyInfoInputs.cache
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.AssemblyInfo.cs
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.csproj.CoreCompileInputs.cache
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.dll
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\refint\P01_Austin.dll
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.pdb
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\P01_Austin.genruntimeconfig.cache
+C:\Users\Austin\Desktop\Visual Programming\P01_Austin\P01_Austin\obj\Debug\net8.0-windows\ref\P01_Austin.dll
