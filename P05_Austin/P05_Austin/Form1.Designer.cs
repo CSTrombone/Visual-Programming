@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             displayLbl = new Label();
             borrowedTxtBox = new TextBox();
             monthsRepayTxtBox = new TextBox();
@@ -100,6 +101,7 @@
             calculateBtn.TabIndex = 6;
             calculateBtn.Text = "Calculate";
             calculateBtn.UseVisualStyleBackColor = true;
+            calculateBtn.Click += calculateBtn_Click;
             // 
             // clearBtn
             // 
@@ -110,6 +112,7 @@
             clearBtn.TabIndex = 7;
             clearBtn.Text = "Clear";
             clearBtn.UseVisualStyleBackColor = true;
+            clearBtn.Click += clearBtn_Click;
             // 
             // abLbl
             // 
@@ -175,6 +178,7 @@
             Controls.Add(monthsRepayTxtBox);
             Controls.Add(borrowedTxtBox);
             Controls.Add(displayLbl);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Estimate Loan Payoff";
