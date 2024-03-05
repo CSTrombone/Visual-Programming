@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P05_Austin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F5C225-F2E6-4CE8-AD97-B8F17B8C3F02}|P05_Austin\\P05_Austin.csproj|C:\\Users\\tmicr\\Desktop\\Visual Programming\\P05_Austin\\p05_austin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4F5C225-F2E6-4CE8-AD97-B8F17B8C3F02}|P05_Austin\\P05_Austin.csproj|solutionrelative:p05_austin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F5C225-F2E6-4CE8-AD97-B8F17B8C3F02}|P05_Austin\\P05_Austin.csproj|c:\\users\\tmicr\\desktop\\visual programming\\p05_austin\\p05_austin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F5C225-F2E6-4CE8-AD97-B8F17B8C3F02}|P05_Austin\\P05_Austin.csproj|solutionrelative:p05_austin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P05_Austin\\P05_Austin\\Form1.cs",
+              "RelativeDocumentMoniker": "P05_Austin\\Form1.cs",
+              "ToolTip": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P05_Austin\\P05_Austin\\Form1.cs [Design]",
+              "RelativeToolTip": "P05_Austin\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T00:00:23.478Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P05_Austin\\P05_Austin\\Form1.cs",
+              "RelativeDocumentMoniker": "P05_Austin\\Form1.cs",
+              "ToolTip": "C:\\Users\\tmicr\\Desktop\\Visual Programming\\P05_Austin\\P05_Austin\\Form1.cs",
+              "RelativeToolTip": "P05_Austin\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T00:00:23.889Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

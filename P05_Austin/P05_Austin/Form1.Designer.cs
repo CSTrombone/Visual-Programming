@@ -48,57 +48,65 @@
             // 
             displayLbl.AutoSize = true;
             displayLbl.Font = new Font("Segoe UI", 15F);
-            displayLbl.Location = new Point(108, 51);
+            displayLbl.Location = new Point(123, 68);
             displayLbl.Name = "displayLbl";
-            displayLbl.Size = new Size(220, 28);
+            displayLbl.Size = new Size(278, 35);
             displayLbl.TabIndex = 0;
             displayLbl.Text = "Student Loan Calculator";
             // 
             // borrowedTxtBox
             // 
-            borrowedTxtBox.Location = new Point(27, 140);
+            borrowedTxtBox.Location = new Point(31, 187);
+            borrowedTxtBox.Margin = new Padding(3, 4, 3, 4);
             borrowedTxtBox.Name = "borrowedTxtBox";
-            borrowedTxtBox.Size = new Size(100, 23);
+            borrowedTxtBox.Size = new Size(114, 27);
             borrowedTxtBox.TabIndex = 1;
             // 
             // monthsRepayTxtBox
             // 
-            monthsRepayTxtBox.Location = new Point(228, 218);
+            monthsRepayTxtBox.Location = new Point(261, 291);
+            monthsRepayTxtBox.Margin = new Padding(3, 4, 3, 4);
             monthsRepayTxtBox.Name = "monthsRepayTxtBox";
             monthsRepayTxtBox.ReadOnly = true;
-            monthsRepayTxtBox.Size = new Size(100, 23);
-            monthsRepayTxtBox.TabIndex = 2;
+            monthsRepayTxtBox.Size = new Size(114, 27);
+            monthsRepayTxtBox.TabIndex = 0;
+            monthsRepayTxtBox.TabStop = false;
             // 
             // totalPaidTxtBox
             // 
             totalPaidTxtBox.HideSelection = false;
-            totalPaidTxtBox.Location = new Point(85, 218);
+            totalPaidTxtBox.Location = new Point(97, 291);
+            totalPaidTxtBox.Margin = new Padding(3, 4, 3, 4);
             totalPaidTxtBox.Name = "totalPaidTxtBox";
             totalPaidTxtBox.ReadOnly = true;
-            totalPaidTxtBox.Size = new Size(100, 23);
-            totalPaidTxtBox.TabIndex = 3;
+            totalPaidTxtBox.Size = new Size(114, 27);
+            totalPaidTxtBox.TabIndex = 0;
+            totalPaidTxtBox.TabStop = false;
             // 
             // monthlyPaymentTxtBox
             // 
-            monthlyPaymentTxtBox.Location = new Point(294, 140);
+            monthlyPaymentTxtBox.Location = new Point(336, 187);
+            monthlyPaymentTxtBox.Margin = new Padding(3, 4, 3, 4);
             monthlyPaymentTxtBox.Name = "monthlyPaymentTxtBox";
-            monthlyPaymentTxtBox.Size = new Size(100, 23);
-            monthlyPaymentTxtBox.TabIndex = 4;
+            monthlyPaymentTxtBox.Size = new Size(114, 27);
+            monthlyPaymentTxtBox.TabIndex = 3;
             // 
             // interestTxtBox
             // 
-            interestTxtBox.Location = new Point(164, 140);
+            interestTxtBox.Location = new Point(187, 187);
+            interestTxtBox.Margin = new Padding(3, 4, 3, 4);
             interestTxtBox.Name = "interestTxtBox";
-            interestTxtBox.Size = new Size(100, 23);
-            interestTxtBox.TabIndex = 5;
+            interestTxtBox.Size = new Size(114, 27);
+            interestTxtBox.TabIndex = 2;
             // 
             // calculateBtn
             // 
             calculateBtn.Cursor = Cursors.Hand;
-            calculateBtn.Location = new Point(231, 312);
+            calculateBtn.Location = new Point(264, 416);
+            calculateBtn.Margin = new Padding(3, 4, 3, 4);
             calculateBtn.Name = "calculateBtn";
-            calculateBtn.Size = new Size(75, 23);
-            calculateBtn.TabIndex = 6;
+            calculateBtn.Size = new Size(86, 31);
+            calculateBtn.TabIndex = 4;
             calculateBtn.Text = "Calculate";
             calculateBtn.UseVisualStyleBackColor = true;
             calculateBtn.Click += calculateBtn_Click;
@@ -106,10 +114,11 @@
             // clearBtn
             // 
             clearBtn.Cursor = Cursors.Hand;
-            clearBtn.Location = new Point(319, 312);
+            clearBtn.Location = new Point(365, 416);
+            clearBtn.Margin = new Padding(3, 4, 3, 4);
             clearBtn.Name = "clearBtn";
-            clearBtn.Size = new Size(75, 23);
-            clearBtn.TabIndex = 7;
+            clearBtn.Size = new Size(86, 31);
+            clearBtn.TabIndex = 5;
             clearBtn.Text = "Clear";
             clearBtn.UseVisualStyleBackColor = true;
             clearBtn.Click += clearBtn_Click;
@@ -117,54 +126,54 @@
             // abLbl
             // 
             abLbl.AutoSize = true;
-            abLbl.Location = new Point(27, 122);
+            abLbl.Location = new Point(31, 163);
             abLbl.Name = "abLbl";
-            abLbl.Size = new Size(105, 15);
+            abLbl.Size = new Size(131, 20);
             abLbl.TabIndex = 8;
             abLbl.Text = "Amount Borrowed";
             // 
             // yirLbl
             // 
             yirLbl.AutoSize = true;
-            yirLbl.Location = new Point(164, 122);
+            yirLbl.Location = new Point(187, 163);
             yirLbl.Name = "yirLbl";
-            yirLbl.Size = new Size(106, 15);
+            yirLbl.Size = new Size(135, 20);
             yirLbl.TabIndex = 9;
             yirLbl.Text = "Yearly Interest Rate";
             // 
             // mpLbl
             // 
             mpLbl.AutoSize = true;
-            mpLbl.Location = new Point(292, 122);
+            mpLbl.Location = new Point(334, 163);
             mpLbl.Name = "mpLbl";
-            mpLbl.Size = new Size(102, 15);
+            mpLbl.Size = new Size(123, 20);
             mpLbl.TabIndex = 10;
             mpLbl.Text = "Monthly Payment";
             // 
             // tpLbl
             // 
             tpLbl.AutoSize = true;
-            tpLbl.Location = new Point(108, 200);
+            tpLbl.Location = new Point(123, 267);
             tpLbl.Name = "tpLbl";
-            tpLbl.Size = new Size(58, 15);
+            tpLbl.Size = new Size(74, 20);
             tpLbl.TabIndex = 11;
             tpLbl.Text = "Total Paid";
             // 
             // mtrLbl
             // 
             mtrLbl.AutoSize = true;
-            mtrLbl.Location = new Point(231, 200);
+            mtrLbl.Location = new Point(264, 267);
             mtrLbl.Name = "mtrLbl";
-            mtrLbl.Size = new Size(97, 15);
+            mtrLbl.Size = new Size(121, 20);
             mtrLbl.TabIndex = 12;
             mtrLbl.Text = "Months to Repay";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(433, 373);
+            ClientSize = new Size(495, 497);
             Controls.Add(mtrLbl);
             Controls.Add(tpLbl);
             Controls.Add(mpLbl);
@@ -179,6 +188,7 @@
             Controls.Add(borrowedTxtBox);
             Controls.Add(displayLbl);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Estimate Loan Payoff";
