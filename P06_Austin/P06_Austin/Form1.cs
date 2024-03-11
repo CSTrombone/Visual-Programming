@@ -1,6 +1,8 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Security.Policy;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using static System.Windows.Forms.LinkLabel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -10,7 +12,7 @@ namespace P06_Austin
     public partial class Form1 : Form
     {
         //Load Menu Text File
-        readonly decimal[] prices = new decimal[30]; //Allows for up to 30 menu items depending on entries in text file.
+        readonly decimal[] prices = new decimal[30]; //Allows for up to 30 menu items depending on entries in menu text file.
 
         public Form1()
         {
@@ -53,10 +55,24 @@ namespace P06_Austin
                 {
                     throw new Exception();
                 }
+
                 decimal total = 0;
+                string name = nameTxtBox.Text;
+                string phone = validatePhone(phoneTxtBox.Text);
+                int boxes = 0;
+                int.TryParse(boxesTxtBox.Text, out boxes);
+                string selection = string.Empty;
+                if(menuListBox.SelectedIndex != -1)
+                {
+                    selection = menuListBox.SelectedItem.ToString();
+                }
+                    
                 Decimal.TryParse(boxesTxtBox.Text, out total);
                 total = total * prices[menuListBox.SelectedIndex];
-                orderListBox.Items.Add(nameTxtBox.Text + phoneTxtBox.Text + boxesTxtBox.Text + "$" + total + menuListBox.SelectedItem);
+
+                string data = String.Format("{0,-22} {1,-16} {2,-8} {3, -9} {4}", name, phone, boxes, "$" + total, selection);
+                
+                orderListBox.Items.Add(data);
 
                 menuListBox.SelectedIndex = -1;
                 priceTxtBox.Text = "$0.00";
@@ -77,10 +93,7 @@ namespace P06_Austin
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (orderListBox.Items.Count != 0 ||
-                nameTxtBox.Text != string.Empty ||
-                phoneTxtBox.Text != string.Empty ||
-                boxesTxtBox.Text != string.Empty) 
+            if (orderListBox.Items.Count != 0)
             {
                 DialogResult saveQuery = MessageBox.Show("Would you like to save this file?", "Overwrite existing window?", MessageBoxButtons.YesNoCancel);
                 if (saveQuery == DialogResult.Yes)
@@ -105,6 +118,9 @@ namespace P06_Austin
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            Clear();
+
             OpenFileDialog openDialog = new OpenFileDialog();
 
             if (openDialog.ShowDialog() == DialogResult.OK)
@@ -127,10 +143,7 @@ namespace P06_Austin
         
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (orderListBox.Items.Count != 0 ||
-                nameTxtBox.Text != string.Empty ||
-                phoneTxtBox.Text != string.Empty ||
-                boxesTxtBox.Text != string.Empty)
+            if (orderListBox.Items.Count != 0)
             {
                 DialogResult saveQuery = MessageBox.Show("Would you like to save this file?", "Exit without saving?", MessageBoxButtons.YesNoCancel);
                 if (saveQuery == DialogResult.Yes)
@@ -184,12 +197,12 @@ namespace P06_Austin
 
                 if (saveDialog.ShowDialog() == DialogResult.OK)
                 {
-                    using (Stream newFile = File.Open(saveDialog.FileName, FileMode.OpenOrCreate))
+                    using (Stream newFile = File.Open(saveDialog.FileName, FileMode.Create))
                     using (StreamWriter writeStream = new StreamWriter(newFile))
                     {
                         for (int i = 0; i < orderListBox.Items.Count; i++)
                         {
-                            writeStream.WriteLine(orderListBox.Items[i].ToString());
+                            writeStream.WriteLine(orderListBox.Items[i]);
                         }
                     }
                 }
@@ -199,6 +212,20 @@ namespace P06_Austin
                 DialogResult denied = MessageBox.Show("Access Denied");
             }
 
+        }
+
+        public string validatePhone(string phone)
+        {
+            Regex phoneNumber = new Regex(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$");
+
+            if (phoneNumber.IsMatch(phone))
+            {
+                return phoneNumber.Replace(phone, "$1-$2-$3");
+            }
+            else
+            {
+                throw new Exception();
+            }
         }
 
     }

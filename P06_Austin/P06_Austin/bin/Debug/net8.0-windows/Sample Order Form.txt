@@ -1,0 +1,13 @@
+Austin Oden            918-237-6908     3        $12.00    Do-si-dos/Peanut Butter Sandwich
+Austin Oden            918-237-6908     3        $3.00     Thin Mints
+Loren Cathers          784-899-3485     3        $12.00    Do-si-dos/Peanut Butter Sandwich
+Gandalf                324-556-2200     2        $8.00     Do-si-dos/Peanut Butter Sandwich
+Bobby Hill             555-555-5555     4        $8.00     Caramel DeLights/Samoas
+Bobby Hill             555-555-5555     16       $32.00    Caramel DeLights/Samoas
+Austin Oden            918-237-6908     4        $16.00    Do-si-dos/Peanut Butter Sandwich
+Loren Cathers          784-899-3485     8        $24.00    Peanut Butter Patties/Tagalongs
+M. Bison               918-257-7886     16       $16.00    Thin Mints
+M. Bison               918-257-7886     3        $12.00    Do-si-dos/Peanut Butter Sandwich
+Happy GIlmore          405-557-2311     7        $21.00    Peanut Butter Patties/Tagalongs
+Gandalf                324-556-2200     2        $2.00     Thin Mints
+Rick Sanchez           999-999-9999     6        $6.00     Thin Mints

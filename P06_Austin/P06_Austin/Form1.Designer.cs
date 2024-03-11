@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
             newToolStripMenuItem = new ToolStripMenuItem();
@@ -62,8 +63,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(5, 2, 0, 2);
-            menuStrip1.Size = new Size(895, 24);
+            menuStrip1.Padding = new Padding(6, 3, 0, 3);
+            menuStrip1.Size = new Size(1023, 30);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -71,34 +72,34 @@
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, saveToolStripMenuItem, exitToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Size = new Size(46, 24);
             fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
             // 
             newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.Size = new Size(180, 22);
+            newToolStripMenuItem.Size = new Size(128, 26);
             newToolStripMenuItem.Text = "New";
             newToolStripMenuItem.Click += newToolStripMenuItem_Click;
             // 
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(180, 22);
+            openToolStripMenuItem.Size = new Size(128, 26);
             openToolStripMenuItem.Text = "Open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new Size(180, 22);
+            saveToolStripMenuItem.Size = new Size(128, 26);
             saveToolStripMenuItem.Text = "Save";
             saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(180, 22);
+            exitToolStripMenuItem.Size = new Size(128, 26);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -106,102 +107,95 @@
             // 
             helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem });
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Size = new Size(55, 24);
             helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(107, 22);
+            aboutToolStripMenuItem.Size = new Size(133, 26);
             aboutToolStripMenuItem.Text = "About";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
             // menuListBox
             // 
             menuListBox.FormattingEnabled = true;
-            menuListBox.ItemHeight = 15;
-            menuListBox.Location = new Point(42, 86);
-            menuListBox.Margin = new Padding(3, 2, 3, 2);
+            menuListBox.Location = new Point(48, 115);
             menuListBox.Name = "menuListBox";
-            menuListBox.Size = new Size(277, 79);
+            menuListBox.Size = new Size(316, 104);
             menuListBox.TabIndex = 1;
             menuListBox.SelectedIndexChanged += menuListBox_SelectChanged;
             // 
             // priceLbl
             // 
             priceLbl.AutoSize = true;
-            priceLbl.Location = new Point(364, 101);
+            priceLbl.Location = new Point(416, 135);
             priceLbl.Name = "priceLbl";
-            priceLbl.Size = new Size(33, 15);
+            priceLbl.Size = new Size(41, 20);
             priceLbl.TabIndex = 2;
             priceLbl.Text = "Price";
             // 
             // priceTxtBox
             // 
-            priceTxtBox.Location = new Point(364, 118);
-            priceTxtBox.Margin = new Padding(3, 2, 3, 2);
+            priceTxtBox.Location = new Point(416, 157);
             priceTxtBox.Name = "priceTxtBox";
             priceTxtBox.ReadOnly = true;
-            priceTxtBox.Size = new Size(110, 23);
+            priceTxtBox.Size = new Size(125, 27);
             priceTxtBox.TabIndex = 3;
             // 
             // nameLbl
             // 
             nameLbl.AutoSize = true;
-            nameLbl.Location = new Point(42, 44);
+            nameLbl.Location = new Point(48, 59);
             nameLbl.Name = "nameLbl";
-            nameLbl.Size = new Size(94, 15);
+            nameLbl.Size = new Size(116, 20);
             nameLbl.TabIndex = 4;
             nameLbl.Text = "Customer Name";
             // 
             // nameTxtBox
             // 
-            nameTxtBox.Location = new Point(161, 41);
-            nameTxtBox.Margin = new Padding(3, 2, 3, 2);
+            nameTxtBox.Location = new Point(184, 55);
             nameTxtBox.Name = "nameTxtBox";
-            nameTxtBox.Size = new Size(252, 23);
+            nameTxtBox.Size = new Size(287, 27);
             nameTxtBox.TabIndex = 5;
             // 
             // phoneLbl
             // 
             phoneLbl.AutoSize = true;
-            phoneLbl.Location = new Point(568, 44);
+            phoneLbl.Location = new Point(649, 59);
             phoneLbl.Name = "phoneLbl";
-            phoneLbl.Size = new Size(96, 15);
+            phoneLbl.Size = new Size(117, 20);
             phoneLbl.TabIndex = 6;
             phoneLbl.Text = "Customer Phone";
             // 
             // boxesLbl
             // 
             boxesLbl.AutoSize = true;
-            boxesLbl.Location = new Point(568, 87);
+            boxesLbl.Location = new Point(649, 116);
             boxesLbl.Name = "boxesLbl";
-            boxesLbl.Size = new Size(101, 15);
+            boxesLbl.Size = new Size(126, 20);
             boxesLbl.TabIndex = 7;
             boxesLbl.Text = "Number Of Boxes";
             // 
             // phoneTxtBox
             // 
-            phoneTxtBox.Location = new Point(687, 41);
-            phoneTxtBox.Margin = new Padding(3, 2, 3, 2);
+            phoneTxtBox.Location = new Point(785, 55);
             phoneTxtBox.Name = "phoneTxtBox";
-            phoneTxtBox.Size = new Size(131, 23);
+            phoneTxtBox.Size = new Size(149, 27);
             phoneTxtBox.TabIndex = 8;
             // 
             // boxesTxtBox
             // 
-            boxesTxtBox.Location = new Point(687, 84);
-            boxesTxtBox.Margin = new Padding(3, 2, 3, 2);
+            boxesTxtBox.Location = new Point(785, 112);
             boxesTxtBox.Name = "boxesTxtBox";
-            boxesTxtBox.Size = new Size(131, 23);
+            boxesTxtBox.Size = new Size(149, 27);
             boxesTxtBox.TabIndex = 9;
             // 
             // addBtn
             // 
-            addBtn.Location = new Point(568, 142);
-            addBtn.Margin = new Padding(3, 2, 3, 2);
+            addBtn.Location = new Point(649, 189);
             addBtn.Name = "addBtn";
-            addBtn.Size = new Size(82, 22);
+            addBtn.Size = new Size(94, 29);
             addBtn.TabIndex = 10;
             addBtn.Text = "Add";
             addBtn.UseVisualStyleBackColor = true;
@@ -209,10 +203,9 @@
             // 
             // removeBtn
             // 
-            removeBtn.Location = new Point(687, 142);
-            removeBtn.Margin = new Padding(3, 2, 3, 2);
+            removeBtn.Location = new Point(785, 189);
             removeBtn.Name = "removeBtn";
-            removeBtn.Size = new Size(82, 22);
+            removeBtn.Size = new Size(94, 29);
             removeBtn.TabIndex = 11;
             removeBtn.Text = "Remove";
             removeBtn.UseVisualStyleBackColor = true;
@@ -220,65 +213,63 @@
             // 
             // orderListBox
             // 
-            orderListBox.FormattingEnabled = true;
-            orderListBox.ItemHeight = 15;
-            orderListBox.Location = new Point(42, 221);
-            orderListBox.Margin = new Padding(3, 2, 3, 2);
+            orderListBox.Font = new Font("Courier New", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            orderListBox.Location = new Point(33, 295);
             orderListBox.Name = "orderListBox";
-            orderListBox.Size = new Size(827, 169);
+            orderListBox.Size = new Size(958, 204);
             orderListBox.TabIndex = 12;
             // 
             // orderNameLbl
             // 
             orderNameLbl.AutoSize = true;
-            orderNameLbl.Location = new Point(142, 192);
+            orderNameLbl.Location = new Point(115, 256);
             orderNameLbl.Name = "orderNameLbl";
-            orderNameLbl.Size = new Size(39, 15);
+            orderNameLbl.Size = new Size(49, 20);
             orderNameLbl.TabIndex = 13;
             orderNameLbl.Text = "Name";
             // 
             // phoneOrderLbl
             // 
             phoneOrderLbl.AutoSize = true;
-            phoneOrderLbl.Location = new Point(340, 192);
+            phoneOrderLbl.Location = new Point(301, 256);
             phoneOrderLbl.Name = "phoneOrderLbl";
-            phoneOrderLbl.Size = new Size(41, 15);
+            phoneOrderLbl.Size = new Size(50, 20);
             phoneOrderLbl.TabIndex = 14;
             phoneOrderLbl.Text = "Phone";
             // 
             // qtyOrderLbl
             // 
             qtyOrderLbl.AutoSize = true;
-            qtyOrderLbl.Location = new Point(449, 192);
+            qtyOrderLbl.Location = new Point(428, 256);
             qtyOrderLbl.Name = "qtyOrderLbl";
-            qtyOrderLbl.Size = new Size(26, 15);
+            qtyOrderLbl.Size = new Size(32, 20);
             qtyOrderLbl.TabIndex = 15;
             qtyOrderLbl.Text = "Qty";
             // 
             // totalOrderLbl
             // 
             totalOrderLbl.AutoSize = true;
-            totalOrderLbl.Location = new Point(521, 192);
+            totalOrderLbl.Location = new Point(595, 256);
             totalOrderLbl.Name = "totalOrderLbl";
-            totalOrderLbl.Size = new Size(10, 15);
+            totalOrderLbl.Size = new Size(13, 20);
             totalOrderLbl.TabIndex = 16;
             totalOrderLbl.Text = " ";
             // 
             // totalLbl
             // 
             totalLbl.AutoSize = true;
-            totalLbl.Location = new Point(537, 192);
+            totalLbl.Location = new Point(531, 256);
             totalLbl.Name = "totalLbl";
-            totalLbl.Size = new Size(32, 15);
+            totalLbl.Size = new Size(42, 20);
             totalLbl.TabIndex = 17;
             totalLbl.Text = "Total";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(895, 411);
+            ClientSize = new Size(1023, 548);
             Controls.Add(totalLbl);
             Controls.Add(totalOrderLbl);
             Controls.Add(qtyOrderLbl);
@@ -297,8 +288,8 @@
             Controls.Add(priceLbl);
             Controls.Add(menuListBox);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Girl Scout Cookies";
