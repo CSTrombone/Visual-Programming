@@ -12,7 +12,8 @@ namespace P06_Austin
     public partial class Form1 : Form
     {
         //Load Menu Text File
-        readonly decimal[] prices = new decimal[30]; //Allows for up to 30 menu items depending on entries in menu text file.
+        const int MENU_SIZE = 30; //Allows for up to 30 menu items depending on entries in menu text file.
+        readonly decimal[] prices = new decimal[MENU_SIZE];
 
         public Form1()
         {
@@ -57,8 +58,8 @@ namespace P06_Austin
                 }
 
                 decimal total = 0;
-                string name = nameTxtBox.Text;
-                string phone = validatePhone(phoneTxtBox.Text);
+                string name = nameTxtBox.Text.Trim();
+                string phone = validatePhone(phoneTxtBox.Text.Trim());
                 int boxes = 0;
                 int.TryParse(boxesTxtBox.Text, out boxes);
                 string selection = string.Empty;

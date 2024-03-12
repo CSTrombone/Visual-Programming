@@ -123,7 +123,7 @@
             menuListBox.Location = new Point(48, 115);
             menuListBox.Name = "menuListBox";
             menuListBox.Size = new Size(316, 104);
-            menuListBox.TabIndex = 1;
+            menuListBox.TabIndex = 3;
             menuListBox.SelectedIndexChanged += menuListBox_SelectChanged;
             // 
             // priceLbl
@@ -141,7 +141,8 @@
             priceTxtBox.Name = "priceTxtBox";
             priceTxtBox.ReadOnly = true;
             priceTxtBox.Size = new Size(125, 27);
-            priceTxtBox.TabIndex = 3;
+            priceTxtBox.TabIndex = 1;
+            priceTxtBox.TabStop = false;
             // 
             // nameLbl
             // 
@@ -157,7 +158,7 @@
             nameTxtBox.Location = new Point(184, 55);
             nameTxtBox.Name = "nameTxtBox";
             nameTxtBox.Size = new Size(287, 27);
-            nameTxtBox.TabIndex = 5;
+            nameTxtBox.TabIndex = 0;
             // 
             // phoneLbl
             // 
@@ -182,21 +183,21 @@
             phoneTxtBox.Location = new Point(785, 55);
             phoneTxtBox.Name = "phoneTxtBox";
             phoneTxtBox.Size = new Size(149, 27);
-            phoneTxtBox.TabIndex = 8;
+            phoneTxtBox.TabIndex = 1;
             // 
             // boxesTxtBox
             // 
             boxesTxtBox.Location = new Point(785, 112);
             boxesTxtBox.Name = "boxesTxtBox";
             boxesTxtBox.Size = new Size(149, 27);
-            boxesTxtBox.TabIndex = 9;
+            boxesTxtBox.TabIndex = 2;
             // 
             // addBtn
             // 
             addBtn.Location = new Point(649, 189);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(94, 29);
-            addBtn.TabIndex = 10;
+            addBtn.TabIndex = 4;
             addBtn.Text = "Add";
             addBtn.UseVisualStyleBackColor = true;
             addBtn.Click += addBtn_Click;
@@ -206,7 +207,7 @@
             removeBtn.Location = new Point(785, 189);
             removeBtn.Name = "removeBtn";
             removeBtn.Size = new Size(94, 29);
-            removeBtn.TabIndex = 11;
+            removeBtn.TabIndex = 5;
             removeBtn.Text = "Remove";
             removeBtn.UseVisualStyleBackColor = true;
             removeBtn.Click += removeBtn_Click;
@@ -217,7 +218,7 @@
             orderListBox.Location = new Point(33, 295);
             orderListBox.Name = "orderListBox";
             orderListBox.Size = new Size(958, 204);
-            orderListBox.TabIndex = 12;
+            orderListBox.TabIndex = 7;
             // 
             // orderNameLbl
             // 
