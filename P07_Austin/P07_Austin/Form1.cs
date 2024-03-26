@@ -18,7 +18,7 @@ namespace P07_Austin
 
         Dictionary<string, StudentInfo> StudentDictonary = new Dictionary<string, StudentInfo>()
         {
-           
+
         };
 
         public Grades()
@@ -29,37 +29,49 @@ namespace P07_Austin
         private void addBtn_Click(object sender, EventArgs e)
         {
             try
-            { 
-                StudentDictonary.Add(nameTxtBox.Text, new StudentInfo(nameTxtBox.Text));
-
-                StudentInfo temp = StudentDictonary[nameTxtBox.Text];
-
-                temp._points[0, 0] = double.Parse(earned1TxtBox.Text);
-                temp._points[0, 1] = double.Parse(earned2TxtBox.Text);
-                temp._points[0, 2] = double.Parse(earned3TxtBox.Text);
-                temp._points[1, 0] = double.Parse(possible1TxtBox.Text);
-                temp._points[1, 1] = double.Parse(possible2TxtBox.Text);
-                temp._points[1, 2] = double.Parse(possible3TxtBox.Text);
-            }
-            catch 
             {
-                StudentDictonary.Remove(nameTxtBox.Text);
-                DialogResult = MessageBox.Show("Error");
+
+                if (StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
+                {
+                    throw new Exception();
+                }
+
+                StudentDictonary.Add(nameTxtBox.Text.Trim(), new StudentInfo(nameTxtBox.Text.Trim()));
+                
+
+                StudentInfo temp = StudentDictonary[nameTxtBox.Text.Trim()];
+
+                temp._points[0, 0] = validateString(earned1TxtBox.Text.Trim());
+                temp._points[0, 1] = validateString(earned2TxtBox.Text.Trim());
+                temp._points[0, 2] = validateString(earned3TxtBox.Text.Trim());
+                temp._points[1, 0] = validateString(possible1TxtBox.Text.Trim());
+                temp._points[1, 1] = validateString(possible2TxtBox.Text.Trim());
+                temp._points[1, 2] = validateString(possible3TxtBox.Text.Trim());
+            }
+            catch (Exception ex)
+            {
+                if (ex is InvalidOperationException)
+                {
+                    StudentDictonary.Remove(nameTxtBox.Text.Trim());
+                    DialogResult = MessageBox.Show("Invalid Input!");
+                }
+                else
+                    DialogResult = MessageBox.Show("Error");
             }
         }
 
         private void findBtn_Click(object sender, EventArgs e)
         {
-            try 
+            try
             {
-                if (StudentDictonary.ContainsKey(nameTxtBox.Text))
+                if (StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
                 {
-                    earned1TxtBox.Text = StudentDictonary[nameTxtBox.Text]._points[0, 0].ToString("#.##");
-                    earned2TxtBox.Text = StudentDictonary[nameTxtBox.Text]._points[0, 1].ToString("#.##");
-                    earned3TxtBox.Text = StudentDictonary[nameTxtBox.Text]._points[0, 2].ToString("#.##");
-                    possible1TxtBox.Text = StudentDictonary[nameTxtBox.Text]._points[1, 0].ToString("#.##");
-                    possible2TxtBox.Text = StudentDictonary[nameTxtBox.Text]._points[1, 1].ToString("#.##");
-                    possible3TxtBox.Text = StudentDictonary[nameTxtBox.Text]._points[1, 2].ToString("#.##");
+                    earned1TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 0]);
+                    earned2TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 1]);
+                    earned3TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 2]);
+                    possible1TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 0]);
+                    possible2TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 1]);
+                    possible3TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 2]);
                 }
                 else
                 {
@@ -77,14 +89,14 @@ namespace P07_Austin
         {
             try
             {
-                if (StudentDictonary.ContainsKey(nameTxtBox.Text))
+                if (StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
                 {
-                    StudentDictonary[nameTxtBox.Text]._points[0, 0] = double.Parse(earned1TxtBox.Text);
-                    StudentDictonary[nameTxtBox.Text]._points[0, 1] = double.Parse(earned2TxtBox.Text);
-                    StudentDictonary[nameTxtBox.Text]._points[0, 2] = double.Parse(earned3TxtBox.Text);
-                    StudentDictonary[nameTxtBox.Text]._points[1, 0] = double.Parse(possible1TxtBox.Text);
-                    StudentDictonary[nameTxtBox.Text]._points[1, 1] = double.Parse(possible2TxtBox.Text);
-                    StudentDictonary[nameTxtBox.Text]._points[1, 2] = double.Parse(possible3TxtBox.Text);
+                    StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 0] = validateString(earned1TxtBox.Text.Trim());
+                    StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 1] = validateString(earned2TxtBox.Text.Trim());
+                    StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 2] = validateString(earned3TxtBox.Text.Trim());
+                    StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 0] = validateString(possible1TxtBox.Text.Trim());
+                    StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 1] = validateString(possible2TxtBox.Text.Trim());
+                    StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 2] = validateString(possible3TxtBox.Text.Trim());
                 }
                 else
                 {
@@ -102,8 +114,15 @@ namespace P07_Austin
         {
             try
             {
-                StudentDictonary.Remove(nameTxtBox.Text);
-                Clear();
+                if (!StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
+                {
+                    throw new Exception();
+                }
+                else
+                {
+                    StudentDictonary.Remove(nameTxtBox.Text.Trim());
+                    Clear();
+                }
             }
             catch
             {
@@ -126,5 +145,55 @@ namespace P07_Austin
             possible2TxtBox.Text = "";
             possible3TxtBox.Text = "";
         }
+
+        //Quality of life
+        private void textUpdate(object sender, EventArgs e)
+        {
+            switch (StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
+            {
+                case true:
+                    checkmarkPicBox.Visible = true;
+                    break;
+                default:
+                    checkmarkPicBox.Visible=false;
+                    break;
+            }
+
+
+        }
+
+        double validateString(string text)
+        {
+            if (double.Parse(text) == 0)
+            {
+                return 0;
+            }
+            else if (double.Parse(text) < 0)
+            { 
+                throw new InvalidOperationException();
+            }
+            else if (double.Parse(text) != 0 && double.Parse(text) > 0)
+            {
+                return double.Parse(text);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        string displayNumbers(double text)
+        {
+            if (text == 0)
+            {
+                return "0";
+            }
+            else
+            {
+                return text.ToString("#.##");
+            }
+        }
+
     }
 }
+    

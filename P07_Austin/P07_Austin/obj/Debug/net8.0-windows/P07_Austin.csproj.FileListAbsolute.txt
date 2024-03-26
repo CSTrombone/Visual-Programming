@@ -15,3 +15,4 @@ C:\Users\tmicr\Desktop\Visual Programming\P07_Austin\P07_Austin\obj\Debug\net8.0
 C:\Users\tmicr\Desktop\Visual Programming\P07_Austin\P07_Austin\obj\Debug\net8.0-windows\P07_Austin.genruntimeconfig.cache
 C:\Users\tmicr\Desktop\Visual Programming\P07_Austin\P07_Austin\obj\Debug\net8.0-windows\ref\P07_Austin.dll
 C:\Users\tmicr\Desktop\Visual Programming\P07_Austin\P07_Austin\obj\Debug\net8.0-windows\P07_Austin.Grades.resources
+C:\Users\tmicr\Desktop\Visual Programming\P07_Austin\P07_Austin\obj\Debug\net8.0-windows\P07_Austin.Properties.Resources.resources
