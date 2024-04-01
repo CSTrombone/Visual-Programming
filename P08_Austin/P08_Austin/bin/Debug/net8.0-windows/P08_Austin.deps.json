@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "P08_Austin/1.0.0": {
+        "runtime": {
+          "P08_Austin.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "P08_Austin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
