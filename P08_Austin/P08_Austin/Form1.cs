@@ -9,14 +9,50 @@ namespace P08_Austin
         {
             InitializeComponent();
         }
-        class StudentInfo(string name)
+        class StudentInfo
         {
             private const int ROWS = 2;
             private const int COLS = 3;
 
-            public string _name = name;
-            public double[,] _points = new double[ROWS, COLS];
+            private string _name = "";
+            private double[,] _points = new double[ROWS, COLS];
 
+            public StudentInfo()
+            {
+                _name = "";
+
+                for (int i = 0; i < _points.GetLength(0); i++)
+                {
+                    for (int j = 0; j < _points.GetLength(1); j++)
+                    {
+                        _points[i, j] = 0;
+                    }
+                }
+            }
+
+            public StudentInfo(string name)
+            {
+                _name = name;
+
+                for (int i = 0; i < _points.GetLength(0); i++)
+                {
+                    for (int j = 0; j < _points.GetLength(1); j++)
+                    {
+                        _points[i, j] = 0;
+                    }
+                }
+            }
+
+            public string Name
+            {
+                get { return _name; }
+            }
+
+            public double[,] Points
+            {
+                get { return _points; }
+                set { _points = value; }
+            }
         }
 
         Dictionary<string, StudentInfo> StudentDictonary = new Dictionary<string, StudentInfo>()
@@ -28,23 +64,22 @@ namespace P08_Austin
         {
             try
             {
-
                 if (StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
                 {
                     throw new Exception();
                 }
 
                 StudentDictonary.Add(nameTxtBox.Text.Trim(), new StudentInfo(nameTxtBox.Text.Trim()));
+                double[,] temp = StudentDictonary[nameTxtBox.Text.Trim()].Points;
 
+                temp[0, 0] = validateString(earned1TxtBox.Text.Trim());
+                temp[0, 1] = validateString(earned2TxtBox.Text.Trim());
+                temp[0, 2] = validateString(earned3TxtBox.Text.Trim());
+                temp[1, 0] = validateString(possible1TxtBox.Text.Trim());
+                temp[1, 1] = validateString(possible2TxtBox.Text.Trim());
+                temp[1, 2] = validateString(possible3TxtBox.Text.Trim());
 
-                StudentInfo temp = StudentDictonary[nameTxtBox.Text.Trim()];
-
-                temp._points[0, 0] = validateString(earned1TxtBox.Text.Trim());
-                temp._points[0, 1] = validateString(earned2TxtBox.Text.Trim());
-                temp._points[0, 2] = validateString(earned3TxtBox.Text.Trim());
-                temp._points[1, 0] = validateString(possible1TxtBox.Text.Trim());
-                temp._points[1, 1] = validateString(possible2TxtBox.Text.Trim());
-                temp._points[1, 2] = validateString(possible3TxtBox.Text.Trim());
+                StudentDictonary[nameTxtBox.Text.Trim()].Points = temp;
             }
             catch (Exception ex)
             {
@@ -64,12 +99,14 @@ namespace P08_Austin
             {
                 if (StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
                 {
-                    earned1TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 0]);
-                    earned2TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 1]);
-                    earned3TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 2]);
-                    possible1TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 0]);
-                    possible2TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 1]);
-                    possible3TxtBox.Text = displayNumbers(StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 2]);
+                    double[,] temp = StudentDictonary[nameTxtBox.Text.Trim()].Points;
+
+                    earned1TxtBox.Text = displayNumbers(temp[0, 0]);
+                    earned2TxtBox.Text = displayNumbers(temp[0, 1]);
+                    earned3TxtBox.Text = displayNumbers(temp[0, 2]);
+                    possible1TxtBox.Text = displayNumbers(temp[1, 0]);
+                    possible2TxtBox.Text = displayNumbers(temp[1, 1]);
+                    possible3TxtBox.Text = displayNumbers(temp[1, 2]);
                 }
                 else
                 {
@@ -89,12 +126,16 @@ namespace P08_Austin
             {
                 if (StudentDictonary.ContainsKey(nameTxtBox.Text.Trim()))
                 {
-                    StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 0] = validateString(earned1TxtBox.Text.Trim());
-                    StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 1] = validateString(earned2TxtBox.Text.Trim());
-                    StudentDictonary[nameTxtBox.Text.Trim()]._points[0, 2] = validateString(earned3TxtBox.Text.Trim());
-                    StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 0] = validateString(possible1TxtBox.Text.Trim());
-                    StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 1] = validateString(possible2TxtBox.Text.Trim());
-                    StudentDictonary[nameTxtBox.Text.Trim()]._points[1, 2] = validateString(possible3TxtBox.Text.Trim());
+                    double[,] temp = StudentDictonary[nameTxtBox.Text.Trim()].Points;
+
+                    temp[0, 0] = validateString(earned1TxtBox.Text.Trim());
+                    temp[0, 1] = validateString(earned2TxtBox.Text.Trim());
+                    temp[0, 2] = validateString(earned3TxtBox.Text.Trim());
+                    temp[1, 0] = validateString(possible1TxtBox.Text.Trim());
+                    temp[1, 1] = validateString(possible2TxtBox.Text.Trim());
+                    temp[1, 2] = validateString(possible3TxtBox.Text.Trim());
+
+                    StudentDictonary[nameTxtBox.Text.Trim()].Points = temp;
                 }
                 else
                 {
