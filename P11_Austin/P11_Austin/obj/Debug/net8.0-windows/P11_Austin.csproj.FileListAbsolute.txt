@@ -1,0 +1,17 @@
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\bin\Debug\net8.0-windows\P11_Austin.exe
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\bin\Debug\net8.0-windows\P11_Austin.deps.json
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\bin\Debug\net8.0-windows\P11_Austin.runtimeconfig.json
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\bin\Debug\net8.0-windows\P11_Austin.dll
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\bin\Debug\net8.0-windows\P11_Austin.pdb
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.Form1.resources
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.csproj.GenerateResource.cache
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.AssemblyInfoInputs.cache
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.AssemblyInfo.cs
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.csproj.CoreCompileInputs.cache
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.sourcelink.json
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.dll
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\refint\P11_Austin.dll
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.pdb
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\P11_Austin.genruntimeconfig.cache
+C:\Users\tmicr\Desktop\Visual Programming\P11_Austin\P11_Austin\obj\Debug\net8.0-windows\ref\P11_Austin.dll
