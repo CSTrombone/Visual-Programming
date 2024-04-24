@@ -1,0 +1,12 @@
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\bin\Debug\Personnel.mdf
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\bin\Debug\Personnel_log.ldf
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\bin\Debug\P10_Austin.exe.config
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\bin\Debug\P10_Austin.exe
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\bin\Debug\P10_Austin.pdb
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\obj\Debug\P10_Austin.csproj.AssemblyReference.cache
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\obj\Debug\P10_Austin.Form1.resources
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\obj\Debug\P10_Austin.Properties.Resources.resources
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\obj\Debug\P10_Austin.csproj.GenerateResource.cache
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\obj\Debug\P10_Austin.csproj.CoreCompileInputs.cache
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\obj\Debug\P10_Austin.exe
+C:\Users\tmicr\Desktop\Visual Programming\P10_Austin\P10_Austin\obj\Debug\P10_Austin.pdb
